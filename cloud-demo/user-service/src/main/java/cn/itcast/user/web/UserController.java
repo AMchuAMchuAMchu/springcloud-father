@@ -37,7 +37,7 @@ public class UserController {
 
     @GetMapping("/now")
     public String now(){
-        return DateTimeFormatter.ofPattern(prop.dateformat).format(LocalDateTime.now())+">>"+ prop.shareConfig;
+        return prop.toString();
     }
 
 }
