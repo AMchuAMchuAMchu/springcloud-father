@@ -24,7 +24,16 @@ logging:
     cn.itcast: debug
   pattern:
     dateformat: MM-dd HH:mm:ss:SSS
+    rolling-file-name: server.%d{yyyy-MM-dd}.%i.log
+  file:
+    max-size: 3KB
+    path: ./log
 #eureka:
 #  client:
 #    service-url:
 #      defaultZone: http://localhost:10086/eureka
+feign:
+  client:
+    config:
+      default:
+        loggerLevel: HEADERS

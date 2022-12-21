@@ -1,5 +1,6 @@
 package cn.itcast.order.web;
 
+import cn.itcast.order.client.UserClient;
 import cn.itcast.order.pojo.Order;
 import cn.itcast.order.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,7 @@ public class OrderController {
 
    @Autowired
    private OrderService orderService;
+
 
     @GetMapping("{orderId}")
     public Order queryOrderByUserId(@PathVariable("orderId") Long orderId) {
