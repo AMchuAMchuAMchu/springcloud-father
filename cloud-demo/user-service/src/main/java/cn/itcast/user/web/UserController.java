@@ -18,7 +18,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @Value("{pattern.dateformat}")
+    @Value("${pattern.dateformat}")
     private String format;
 
     /**
