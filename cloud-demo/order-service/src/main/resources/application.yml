@@ -22,10 +22,9 @@ mybatis:
 logging:
   level:
     cn.itcast: debug
-  file:
-    max-size: 3KB
-    name: server.%d{yyyy-MM_dd}.%i.log
-    path: ./log
+#  file:
+#    max-size: 3KB
+#    path: ./log
   pattern:
     dateformat: MM-dd HH:mm:ss:SSS
 #eureka:
